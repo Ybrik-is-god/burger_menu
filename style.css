@@ -50,12 +50,14 @@ body{
 }
 
 .navbar-mobile .modal{
+    transition: top 0.9s;
     background-color: #F92995;
     height: 100vh;
     position: fixed;
     left: 0;
     width: 100%;
     opacity: 0.9;
+    top: -100vh;
 }
 
 .navbar-mobile .navbar-mobile-list{
@@ -87,18 +89,7 @@ body{
     display: none;
 }
 
-.modal{
-    transition: top 0.9s;
-    background-color: #F92995;
-    height: 100vh;
-    position: fixed;
-    top: -100vh;
-    left: 0;
-    width: 100%;
-    opacity: 0.9;
-}
-
-.change-modal{
+.navbar-mobile .modal.change-modal{
     top: 0;
 }
 
